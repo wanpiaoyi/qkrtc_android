@@ -21,14 +21,12 @@
     }
 # 2.添加权限
       <uses-permission android:name="android.permission.CAMERA" />
-
       <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
       <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
       <uses-permission android:name="android.permission.INTERNET" />
-
       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+      <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+      <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
 
 # 3.申请appKey和appSecret
 
