@@ -9,16 +9,14 @@
 在build.gradle中加入以下依赖
 
     implementation 'com.qukan.qkwebrtcsdk:qkrtc:1.0.1'
-
     api 'implementation 'org.webrtc:libwebrtc:1.0.4'
-    
-    api 'com.google.code.gson:gson:2.8.5'
-    
-    implementation 'com.tencent.bugly:crashreport:2.6.6.1'
-    
-    implementation('io.socket:socket.io-client:0.9.0') {
+    api 'com.google.code.gson:gson:2.8.6'
+    implementation('io.socket:socket.io-client:1.0.0') {
         exclude group: 'org.json', module: 'json'
     }
+    implementation 'com.tencent.bugly:crashreport:3.1.9'
+    implementation 'com.tencent.bugly:nativecrashreport:3.7.1'
+    
 ## 2.添加权限
       <uses-permission android:name="android.permission.CAMERA" />
       <uses-permission android:name="android.permission.RECORD_AUDIO" />
