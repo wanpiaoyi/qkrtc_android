@@ -9,7 +9,7 @@
 在build.gradle中加入以下依赖
 
     implementation 'com.qukan.qkwebrtcsdk:qkrtc:1.0.1'
-    api 'implementation 'org.webrtc:libwebrtc:1.0.4'
+    api 'org.webrtc:libwebrtc:1.0.4'
     api 'com.google.code.gson:gson:2.8.6'
     implementation('io.socket:socket.io-client:1.0.0') {
         exclude group: 'org.json', module: 'json'
