@@ -8,7 +8,7 @@
  
 在build.gradle中加入以下依赖
 
-    implementation 'com.qukan.qkwebrtcsdk:qkrtc:1.0.1'
+    implementation 'com.qukan.qkwebrtcsdk:qkrtc:1.1.0'
     api 'org.webrtc:libwebrtc:1.0.4'
     api 'com.google.code.gson:gson:2.8.6'
     implementation('io.socket:socket.io-client:1.0.0') {
