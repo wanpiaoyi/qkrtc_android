@@ -20,6 +20,14 @@
         android:src="@drawable/call_off" />
 
     <Button
+        android:id="@+id/btn_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:text="投屏"/>
+
+    <Button
         android:id="@+id/btn_push"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

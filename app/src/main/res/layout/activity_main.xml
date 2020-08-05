@@ -3,44 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/et_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="账号id(默认3)" />
-
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="登录" />
+            android:hint="账号id(默认2)" />
 
         <EditText
             android:id="@+id/et_room"
-            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:hint="房间号(默认111)" />
 
         <Button
             android:id="@+id/btn_enter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="进入房间" />
+            android:text="鉴权" />
 
     </LinearLayout>
 
-
     <RadioGroup
-        android:id="@+id/rb_orientation"
+        android:id="@+id/rb_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -49,18 +42,40 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/rb_land"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="横屏" />
-
-        <RadioButton
-            android:id="@+id/rb_por"
+            android:id="@+id/rb_meeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="竖屏" />
+            android:text="云会议sdk" />
+
+        <RadioButton
+            android:id="@+id/rb_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通用sdk" />
     </RadioGroup>
 
+    <RadioGroup
+        android:id="@+id/rb_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
+        <RadioButton
+            android:id="@+id/rb_watcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="围观者" />
+
+        <RadioButton
+            android:id="@+id/rb_partner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="参与者" />
+
+    </RadioGroup>
 </FrameLayout>
